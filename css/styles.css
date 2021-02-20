@@ -320,8 +320,6 @@ img {
   cursor: pointer;
 }
 .icon-social{
-  width: 20px;
-  height: 20px;
   fill: var(--color-icon);
 }
 .icon-social-link:hover .icon-social{
