@@ -131,15 +131,16 @@ img {
 }
 .header__contact {
   color: var(--contact-color);
+  display: flex;
+  align-items: center;
 }
 .header__nav-list :not(:last-child),
 .header__contacts :not(:last-child) {
   margin-right: 50px;
 }
 .header__contact-tel{
-  width: 10px;
-  height: 15px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .current {
   color: var(--hover-color);
@@ -311,10 +312,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+   transition: 0.5s;
 }
 .icon-social-link:hover{
   background-color: var(--decor-color);
-  transition: 0.7s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .icon-social{
@@ -371,11 +373,16 @@ letter-spacing: 0.03em;
 }
 .footer__container{
   display: flex;
+      align-items: baseline;
 }
 .footer__address{
   margin-right: 70px;
 }
 .footer__logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   margin-bottom: 20px;
   color: var(--white-color);
   display: inline-block;
@@ -435,6 +442,7 @@ color: var(--white-color);
   line-height: 1.6;
   background: var(--bg-color);
   border-radius: 4px;
+  transition: 0.5s;
 }
 .portfolio__filter-link:focus,
 .portfolio__filter-link:hover {
@@ -442,6 +450,7 @@ color: var(--white-color);
   background-color: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 0.5s;
 }
 .portfolio__img {
   width: 100%;
@@ -449,7 +458,6 @@ color: var(--white-color);
 .portfolio__progect-list {
   display: flex;
   flex-wrap: wrap;
-  /* зло повержено */
 }
 .portfolio__progect {
   width: calc((100% - 60px) / 3);
@@ -457,6 +465,11 @@ color: var(--white-color);
   margin-bottom: 30px;
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
+  transition: 0.5s;
+}
+.portfolio__progect:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 0.5s;
 }
 .portfolio__progect:nth-child(3n + 3) {
   margin-right: 0;
